@@ -6,7 +6,7 @@ PRESENTER=pdfpc
 
 all: main.pdf
 
-main.pdf: main.tex
+main.pdf: main.tex graph.pdf
 	$(RUBBER) --unsafe -d main.tex
 
 %.pdf: %.dot
@@ -30,6 +30,7 @@ clean:
 	rm -rf _minted-main
 	rm -f *.snm
 	rm -f *.nav
+	rm -f *.vrb
 
 clean_all: clean
 	rm -f *.pdf

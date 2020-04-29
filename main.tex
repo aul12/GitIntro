@@ -45,5 +45,127 @@
     \tableofcontents
 }
 
+\section{Einleitung}
+\begin{frame}
+    \frametitle{Wofür ein Versionsverwaltungssystem?}
+    Situation: Mehrere Leute arbeiten über längere Zeit an einer Codebase
+
+    \vspace{.5cm}
+
+    \pause
+    Probleme:
+    \pause
+    \begin{itemize}
+        \item Datei Austausch zwischen Nutzer
+            \pnote{Dateien müssen für alle Nutzer in aktueller Form vorliegen}
+            \pause
+        \item Aber: nicht sofort, erst wenn fertig
+            \pnote{Vgl. Google-Docs, wenn ein User was ändert compiliert Code nicht}
+            \pause
+        \item Alte Codestände sollten getestet werden können
+            \pnote{Ermöglicht es zu testen "war das schon immer so"?}
+            \pause
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Was noch?}
+    \begin{itemize}
+        \item Authentisierung: von wem ist der Code
+            \pnote{Hilft bei Fragen}
+            \pause
+        \item Kein permanenter Internetzugriff 
+            \pnote{Damit immer gearbeitet werden kann}
+            \pause
+        \item Einfache Nutzung
+            \pnote{Nur Mittel zum Zweck}
+            \pause
+        \item Schnell
+            \pnote{Arbeiten sollte nicht behindert werden}
+            \pause
+        \item Sicher
+            \pnote{Nur berechtigte Nutzer sollten Code ändern dürfen}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Git}
+    \begin{columns}
+        \begin{column}{.7\textwidth}
+            \begin{itemize}
+                \item<1-> Freie Software zur Versionsverwaltung
+                    \pnote{Frei: FOSS und Beer}
+                \item<2-> Dezentral
+                    \pnote{Es kann aber auch eine Server geben}
+                \item<3-> Wurde 2005 von Linus Torvals für Linux initiiert
+                    \pnote{Sehr großes, sehr verteiltes Softwareprojekt}
+                \item<4-> Defakto Standard
+                    \pnote{Wird quasi überall genutzt}
+            \end{itemize}
+        \end{column}
+        \begin{column}{.3\textwidth}
+            \includegraphics[width=\textwidth]{Git-Icon-1788C.eps}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Konzept}
+\begin{frame}
+    \frametitle{Aufbau Git}
+    \begin{itemize}
+        \item Repository: Eine zusammenhänge Codebase/Projekt
+            \pnote{Muss nicht zwingend Code sein!}
+            \pnote{Größte Einheit}
+            \pause
+        \item Ein Repository ist ein (azyklischer) gerichterer Graph aus Commits
+            \pnote{Jedes Repository besteht aus Commits}
+            \pause
+    \end{itemize}
+
+    \includegraphics[width=\textwidth]{graph.pdf}
+\end{frame}
+
+\begin{frame}[fragile]
+    \frametitle{Commit}
+    \begin{columns}
+        \begin{column}{.25\textwidth}
+            \begin{itemize}
+                \item Code-Stand
+                    \pnote{Eigentlicher Inhalt}
+                    \pause
+                \item Eindeutige Bezeichnung
+                    \pnote{SHA-1 Hash der Änderungen um eindeutig zuordnen zu können}
+                    \pause
+                \item Autor
+                    \pnote{Siehe Authentisierung oben}
+                    \pause
+                \item Datum
+                    \pause
+                \item Nachricht
+                    \pnote{Text vom Autor, was wurde geändert}
+            \end{itemize}
+        \end{column}
+        \begin{column}{.75\textwidth}
+            \begin{verbatim}
+commit feeecb67fe1fa0490a2b836d5ba35da5812a3d27
+Author: Paul Nykiel <paul.nykiel@gmail.com>
+Date:   Mon Apr 20 22:55:41 2020 +0200
+
+Added ADTF type header
+            \end{verbatim}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\section{Nutzung}
+
+
+\section{GitLab}
+
+\section{Git bei uns}
+
+\section{Abschluss}
+
+\section{Praxis}
 
 \end{document}
