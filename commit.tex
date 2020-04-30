@@ -8,6 +8,7 @@
         \filldraw[draw=black, fill=gray!10] (0.25,1.25) rectangle (2.75,1.75) node() [pos=.5] {File 2};
         \filldraw[draw=black, fill=gray!10] (0.25,0.25) rectangle (2.75,0.75) node() [pos=.5] {File 3};
         \node() at(13,4){};
+        \node() at(13,-1){};
     \end{tikzpicture}
 }
 
@@ -25,6 +26,7 @@
         \filldraw[draw=black, fill=gray!10] (0.25,1.25) rectangle (2.75,1.75) node() [pos=.5] {File 2};
         \filldraw[draw=black, fill=gray!10] (0.25,0.25) rectangle (2.75,0.75) node() [pos=.5] {File 3};
         \node() at(13,4){};
+        \node() at(13,-1){};
     \end{tikzpicture}
 }
 
@@ -42,6 +44,7 @@
         \filldraw[draw=black, fill=gray!10] (0.25,1.25) rectangle (2.75,1.75) node() [pos=.5] {File 2};
         \filldraw[draw=black, fill=gray!10] (5.25,0.25) rectangle (7.75,0.75) node() [pos=.5] {File 1};
         \node() at(13,4){};
+        \node() at(13,-1){};
     \end{tikzpicture}
 }
 
@@ -59,6 +62,7 @@
         \filldraw[draw=black, fill=gray!10] (5.25,1.25) rectangle (7.75,1.75) node() [pos=.5] {File 2};
         \filldraw[draw=black, fill=gray!10] (5.25,0.25) rectangle (7.75,0.75) node() [pos=.5] {File 1};
         \node() at(13,4){};
+        \node() at(13,-1){};
     \end{tikzpicture}
 }
 
@@ -74,11 +78,14 @@
 
         \draw[line width=1pt, ->] (3, 1.5) -- (5,1.5) node[midway, above]() {Add};
         \draw[line width=1pt, ->] (8, 1.5) -- (10,1.5) node[midway, above]() {Commit};
+        \draw[line width=1pt, ->] (11.5,-1) -- (11.5,0);
+        \draw[line width=1pt, ->] (11.5,3.5) -- (11.5,4);
 
         \filldraw[draw=black, fill=gray!10] (0.25,0.25) rectangle (2.75,0.75) node() [pos=.5] {File 3};
         \filldraw[draw=black, fill=gray!10] (5.25,1.25) rectangle (7.75,1.75) node() [pos=.5] {File 2};
         \filldraw[draw=black, fill=gray!10] (5.25,0.25) rectangle (7.75,0.75) node() [pos=.5] {File 1};
         \node() at(13,4){};
+        \node() at(13,-1){};
     \end{tikzpicture}
 }
 
@@ -94,10 +101,13 @@
 
         \draw[line width=1pt, ->] (3, 1.5) -- (5,1.5) node[midway, above]() {Add};
         \draw[line width=1pt, ->] (8, 1.5) -- (10,1.5) node[midway, above]() {Commit};
+        \draw[line width=1pt, ->] (11.5,-1) -- (11.5,0);
+        \draw[line width=1pt, ->] (11.5,3.5) -- (11.5,4);
 
         \filldraw[draw=black, fill=gray!10] (0.25,0.25) rectangle (2.75,0.75) node() [pos=.5] {File 3};
         \filldraw[draw=black, fill=gray!10] (5.25,0.25) rectangle (7.75,0.75) node() [pos=.5] {File 1};
         \filldraw[draw=black, fill=gray!10] (10.25,0.25) rectangle (12.75,0.75) node() [pos=.5] {File 2};
         \node() at(13,4){};
+        \node() at(13,-1){};
     \end{tikzpicture}
 }
