@@ -164,6 +164,43 @@ Added ADTF type header
     \end{center}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Remotes}
+    \begin{columns}
+        \begin{column}{.5\textwidth}
+        \begin{itemize}
+            \item<1-> Bis jetzt alles lokal
+                \pnote{Aber primäre Änderung war verteiltes Arbeiten}
+            \item<2-> Codebase auf anderem Host: \glqq{}Remote\grqq{}
+                \pnote{Andere Hostname wird über Netzwerkadresse und Pfad indentifiziert}
+            \item<3-> Operationen: Commits von Remote kopieren, Commits zu Remote kopieren
+                \pnote{Nur Commits und Teile vom Graphen können übertragen werden, nicht das aktuelle Workingdirectory}
+            \item<4-> Oftmals ein zentraler Server
+                \pnote{Wird oftmals origin genannt}
+        \end{itemize}
+        \end{column}
+        \begin{column}{.5\textwidth}
+            \begin{center}
+                \begin{tikzpicture}
+                    \filldraw[draw=black, fill=gray!50] (0,0) rectangle (2,3);
+                    \filldraw[draw=black, fill=gray!50] (4,0) rectangle (6,3);
+
+                    \draw[line width=1pt,->] (2,2) -- (4,2) node[midway, above]() {Push};
+                    \draw[line width=1pt,->] (4,1) -- (2,1) node[midway, below]() {Pull};
+
+                    \node[above]() at (1,3) {Local};
+                    \node[above]() at (5,3) {Remote};
+                \end{tikzpicture}
+            \end{center}
+        \end{column}
+    \end{columns}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Branches}
+    \includegraphics[width=\textwidth]{branch.pdf}
+\end{frame}
+
 \section{Nutzung}
 
 

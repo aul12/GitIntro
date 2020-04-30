@@ -1,0 +1,27 @@
+digraph G {
+    rankdir = "LR"
+    subgraph cluster_0 {
+        1 -> 2 -> 3 -> 4 -> 5;
+        style=filled;
+        color=white;
+    }
+
+    subgraph cluster_1 {
+        style=filled;
+        color=lightgrey;
+        B0 -> B1 -> B2
+        label = "Branch 1";
+    }
+
+    subgraph cluster_2 {
+        style=filled;
+        color=lightgrey;
+        C0 -> C1
+        label = "Branch 2";
+    }
+    0 -> 1;
+    1 -> B0;
+    2 -> C0;
+    C1 -> 5;
+    B2 -> 4;
+}
