@@ -234,16 +234,76 @@ Added ADTF type header
                 \item \lstinline{checkout}
                     \pnote{Anderen Knoten in Graph auswählen}
                     \pause
+                \item \lstinline{status}
+                    \pnote{Zustand des Repositories anzeigen}
+                    \pause
                 \item \lstinline{log}
-                    \pnote{Letzten Commits anzeigen}
+                    \pnote{Letzte Commits anzeigen}
             \end{itemize}
     \end{itemize}
 \end{frame}
 
 \begin{frame}
-    \frametitle{\lstinline{add}}
+    \frametitle{add}
     \begin{center}
         {\Large \lstinline{git add FILES...}}
+        \pause
+    
+        \vspace{1cm}
+
+        {\Large \lstinline{git add -A}}
+        \pause
+    
+        \vspace{1cm}
+
+        {\Large \lstinline{git add -u}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Commit}
+    \begin{center}
+        {\Large \lstinline{git commit -m "message"}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Push}
+    \begin{center}
+        {\Large \lstinline{git push REMOTE BRANCH}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Pull}
+    \begin{center}
+        {\Large \lstinline{git pull REMOTE BRANCH}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Checkout}
+    \begin{center}
+        {\Large \lstinline{git checkout IDENTIFIER}}
+
+        mit Identifier: Branch Name, Commit-Hash, \ldots
+        \pause
+
+        \vspace{1cm}
+    
+        {\Large \lstinline{git checkout -b NEW\_BRANCH}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Information}
+    \begin{center}
+        {\Large \lstinline{git status}}
+        \pause
+
+        \vspace{1cm}
+
+        {\Large \lstinline{git log}}
     \end{center}
 \end{frame}
 
