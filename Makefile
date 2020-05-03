@@ -6,7 +6,7 @@ PRESENTER=pdfpc
 
 all: main.pdf
 
-main.pdf: *.tex graph.pdf branch.pdf
+main.pdf: *.tex graph.pdf branch.pdf flow.pdf
 	$(RUBBER) --unsafe -d main.tex
 
 %.pdf: %.dot

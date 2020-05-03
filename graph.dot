@@ -1,6 +1,8 @@
 digraph G {
     rankdir="LR";
     bgcolor="transparent";
+    node [fontname="Computer Modern"]
+
     node[group=master];
     1 -> 2 -> 5 -> 7
     node[group=branch];
