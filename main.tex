@@ -8,6 +8,7 @@
 \usepackage{booktabs}
 \usepackage{minted}
 \usepackage[ngerman]{babel}
+\usepackage{fontawesome}
 
 \usetheme{Hannover}
 \usecolortheme{dove}
@@ -354,10 +355,60 @@ Added ADTF type header
 \end{frame}
 
 \section{Git bei uns}
+\begin{frame}
+    \frametitle{Git-Flow}
+    \begin{itemize}
+        \item Definition von Abläufen, die für stabilen, aber auch aktuellen Code sorgen sollen
+    \end{itemize}
+\end{frame}
 
 \section{Abschluss}
 
 \section{Praxis}
+\begin{frame}
+    \frametitle{Repository-Einrichten}
+    \begin{itemize}
+        \item Legt ein Repository mit eurem Namen in der Gruppe \lstinline{GitWorkshop} an
+            \pause
+        \item Erzeugt eine lokale Kopie des Repositories auf eurem Rechner (\lstinline{clone})
+            \pause
+        \item Legt eine Datei \lstinline{.gitignore} an
+            \pause
+        \item Legt die Branchstruktur für Git-Flow an
+            \pause
+        \item Legt ein Issue an und setzt euch als Verantwortlichen
+    \end{itemize}
+\end{frame}
 
+\begin{frame}
+    \frametitle{Ein erster MR}
+    \begin{itemize}
+        \item Legt einen Feature Branch an
+            \pause
+        \item Commited den Code vom C++-Workshop (Teil 2) auf den Feature-Branch 
+            \pause
+        \item Legt einen WIP-MR dafür an, setzt mich als Verantwortlichen
+            \pause
+        \item Ich werde euch Feedback in Form von Anmerkungen geben
+            \pause
+        \item Arbeitet die Anmerkungen ein
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{MR mergen}
+    \begin{itemize}
+        \item Fügt zu eurem WIP-MR den Code vom C++ Workshop Teil 3 hinzu
+            \pause
+        \item Ich werde wieder Feedback geben, das ihr einarbeiten sollt
+            \pause
+        \item Wenn alles OK ist bekommt ihr einen \faThumbsOUp
+            \pause
+        \item Dann könnt ihr den MR mergen
+            \pause
+        \item Aktualisiert euere lokalen Branches
+    \end{itemize}
+\end{frame}
+        
 
 \end{document}
