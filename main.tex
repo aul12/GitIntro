@@ -225,14 +225,17 @@ Added ADTF type header
                 \item \lstinline{commit}
                     \pnote{Commit aus Dateien in Staging generieren}
                     \pause
+                \item \lstinline{merge}
+                    \pnote{Zwei Branches zusammenführen}
+                    \pause
+                \item \lstinline{checkout}
+                    \pnote{Anderen Knoten in Graph auswählen}
+                    \pause
                 \item \lstinline{push}
                     \pnote{Lokalen (Teil-) Graph auf Remote übertragen}
                     \pause
                 \item \lstinline{pull}
                     \pnote{(Teil-) Graph zu lokal übertragen}
-                    \pause
-                \item \lstinline{checkout}
-                    \pnote{Anderen Knoten in Graph auswählen}
                     \pause
                 \item \lstinline{status}
                     \pnote{Zustand des Repositories anzeigen}
@@ -244,7 +247,7 @@ Added ADTF type header
 \end{frame}
 
 \begin{frame}
-    \frametitle{add}
+    \frametitle{Add}
     \begin{center}
         {\Large \lstinline{git add FILES...}}
         \pause
@@ -268,16 +271,9 @@ Added ADTF type header
 \end{frame}
 
 \begin{frame}
-    \frametitle{Push}
+    \frametitle{Merge}
     \begin{center}
-        {\Large \lstinline{git push REMOTE BRANCH}}
-    \end{center}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Pull}
-    \begin{center}
-        {\Large \lstinline{git pull REMOTE BRANCH}}
+        {\Large \lstinline{git merge BRANCH}}
     \end{center}
 \end{frame}
 
@@ -295,6 +291,21 @@ Added ADTF type header
     \end{center}
 \end{frame}
 
+
+\begin{frame}
+    \frametitle{Push}
+    \begin{center}
+        {\Large \lstinline{git push REMOTE BRANCH}}
+    \end{center}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Pull}
+    \begin{center}
+        {\Large \lstinline{git pull REMOTE BRANCH}}
+    \end{center}
+\end{frame}
+
 \begin{frame}
     \frametitle{Information}
     \begin{center}
@@ -308,11 +319,39 @@ Added ADTF type header
 \end{frame}
 
 \begin{frame}
-    \Huge{Demo} 
-    \pnote{init, touch, status, add, status, commit, status, log, checkout -b, status, checkout}
+    \Huge{Demo: Einfache Nutzung} 
+    \pnote{init, touch, status, add, status, commit, status, log, checkout -b, status, checkout, merge, log}
 \end{frame}
 
 \section{GitLab}
+\begin{frame}
+    \frametitle{GitLab}
+    GitLab ist ein Git-Server (\glqq{}Remote\grqq{}) mit Web-Frontend
+    \pnote{Also quasi nur ein weiterer Remote mit Zusatzfeatures}
+    \pause
+    
+    \vspace{1cm}
+
+    Features: \pause
+    \begin{itemize}
+        \item Zugriffskontrolle
+            \pnote{Protected Branches, Gruppen...}
+            \pause
+        \item Merge Requests
+            \pnote{Anfrage Branch zu Mergen, kann dann z.B. reviewed werden}
+            \pause
+        \item Issue Tracker
+            \pnote{Issues und TODOs können getracked werden}
+            \pause
+        \item Continuous Integration 
+            \pnote{Bei Commit/MR können automatisch Dinge geprüft werden}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \Huge{Demo: GitLab}
+    \pnote{remote add, push, Anschauen, checkout -b, push, Anschauen, MR, mergen, checkout, pull}
+\end{frame}
 
 \section{Git bei uns}
 
