@@ -359,12 +359,61 @@ Added ADTF type header
     \frametitle{Git-Flow}
     \begin{itemize}
         \item Definition von Abläufen, die für stabilen, aber auch aktuellen Code sorgen sollen
+            \pause
         \item Zwei langläufige Branches: \lstinline{master} und \lstinline{develop}
+            \pause
+        \item Für jedes Feature: einen Feature-Branch auf Basis Develop
+            \pause
     \end{itemize}
     \includegraphics[width=\textwidth]{flow.pdf}
 \end{frame}
 
+\begin{frame}
+    \frametitle{Merge Requests}
+    \begin{itemize}
+        \item Template
+            \pnote{Verweis auf Template}
+            \pause
+        \item Zwei Reviewer: Thematisch und C++
+            \pause
+        \item Continuous Integration:
+            \pnote{Was ist eine CI}
+            \pause
+            \begin{itemize}
+                \item Compilieren
+                    \pause 
+                \item Unit-Tests
+                    \pause
+                \item Statische Analyse (Sonarqube)
+                    \pause
+                \item Simulator-Tests
+            \end{itemize}
+            \pause
+        \item Mergen nur von Administratoren
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \Huge{Demo: Git-Flow}
+\end{frame}
+
 \section{Abschluss}
+\begin{frame}
+    \frametitle{Abschluss}
+    {\Large Mehr Informationen:}
+    \begin{itemize}
+        \item \lstinline{man git}
+            \pause
+        \item \url{https://git.spatz.wtf/spatzenhirn/wiki/-/wikis/Anleitungen/Git\%20Tutorial}
+            \pause
+        \item \url{https://git.spatz.wtf/spatzenhirn/GitIntro}
+    \end{itemize}
+    \pause
+
+    \vspace{1cm}
+
+    {\Large Was fehlt: \pause fast alles}
+\end{frame}
 
 \section{Praxis}
 \begin{frame}
