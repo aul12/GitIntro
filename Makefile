@@ -14,6 +14,9 @@ main.pdf: *.tex graph.pdf branch.pdf flow.pdf
 
 show: main.pdf
 	$(SCREEN) -dm $(VIEWER) main.pdf 2> /dev/null
+	
+present: main.pdf
+	$(PRESENTER) main.pdf
 
 clean:
 	rm -f *.toc
